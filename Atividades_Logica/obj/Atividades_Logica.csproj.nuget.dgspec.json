@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\geanv\\OneDrive\\Documentos\\4ª semestre\\LTP-3\\Atividades_Logica\\Atividades_Logica.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\geanv\\OneDrive\\Documentos\\4ª semestre\\LTP-3\\Atividades_Logica\\Atividades_Logica.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\geanv\\OneDrive\\Documentos\\4ª semestre\\LTP-3\\Atividades_Logica\\Atividades_Logica.csproj",
+        "projectName": "Atividades_Logica",
+        "projectPath": "C:\\Users\\geanv\\OneDrive\\Documentos\\4ª semestre\\LTP-3\\Atividades_Logica\\Atividades_Logica.csproj",
+        "packagesPath": "C:\\Users\\geanv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\geanv\\OneDrive\\Documentos\\4ª semestre\\LTP-3\\Atividades_Logica\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\geanv\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
