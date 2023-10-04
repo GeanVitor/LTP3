@@ -9,15 +9,14 @@ namespace Blog.Services
         static List<Postagen> Postagens { get; }
         static int nextId = 3;
 
-        /*static BlogService()
+        static BlogService()
         {
             Postagens = new List<Postagen>
             {
-                new Postagen { Id = 1, Titulo = "Classic Italian", Assunto = "C#" , Conteudo = ""},
-                new Postagen { Id = 2, Titulo = "Veggie", Assunto = "Js" , Conteudo = "" }
+                new Postagen { Id = 1, Titulo = "Java", Assunto = "Programação" , Conteudo = "java e uma linguagen orientada a objetos"},
+                new Postagen { Id = 2, Titulo = "javascript", Assunto = "Programação" , Conteudo = "Javascript e uma liguagen web" }
             };
         }
-        */
 
         public static List<Postagen> GetAll() => Postagens;
 
@@ -25,18 +24,9 @@ namespace Blog.Services
 
         public static void Add(Postagen postagen)
         {
-            if (postagen != null &&
-                !string.IsNullOrWhiteSpace(postagen.Titulo) &&
-                !string.IsNullOrWhiteSpace(postagen.Assunto) &&
-                !string.IsNullOrWhiteSpace(postagen.Conteudo))
-            {
-                postagen.Id = nextId++;
-                Postagens.Add(postagen);
-            }
-            else
-            {
-                Console.WriteLine("Os dados da postagem não foram criados corretamente. A postagem não será adicionada.");
-            }
+            postagen.Id = nextId++;
+            Postagens.Add(postagen);
+
         }
 
         public static void Delete(int id)
