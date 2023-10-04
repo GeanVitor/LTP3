@@ -1,7 +1,7 @@
 1-Para rodar o projeto insira no terminal o comando #dotnet run e a seguinte mensagen ira aparecer:
 ![Alt text](image.png)
 
-2-em sequida abra outro terminal para usarmos o REPL do Asp.Net e rode o comando #httprepl http://localhost:{PORT} e aparecera a seguinte mensagen:
+2-em sequida abra outro terminal para usarmos o REPL do Asp.Net e rode o comando #httprepl http://localhost:{PORT} e você vera no console:
 ![Alt text](image-1.png)
 
 3-em sequida rode o comando # connect https://localhost:{PORT} e a sequinte mensagen aparecera:
