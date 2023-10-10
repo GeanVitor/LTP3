@@ -24,7 +24,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blog do ASP.NET API v1");
 });
 //Metodo get para obter todas as postagens
-app.MapGet("/postagens", async (db) => await db.Pizzas.ToListAsync());
+app.MapGet("/postagens", async (PostagenDb db) => await db.Postagens.ToListAsync());
 
 // Método get para obter somente um item
 app.MapGet("/postagens/{id}", async (int id, PostagenDb db) => await db.Postagens.FindAsync(id));
