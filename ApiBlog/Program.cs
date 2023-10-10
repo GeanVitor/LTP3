@@ -3,9 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using ApiBlog.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Postagens") ?? "Data Source=Postagem.db";
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContext<PostagenDb>(options => options.UseInMemoryDatabase("items"));
+builder.Services.AddSqlite<PostagenDb>(connectionString);
 builder.Services.AddSwaggerGen(c => 
 {
     c.SwaggerDoc("v1", new OpenApiInfo 
@@ -22,6 +23,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blog do ASP.NET API v1");
 });
+//Metodo get para obter todas as postagens
+app.MapGet("/postagens", async (db) => await db.Pizzas.ToListAsync());
 
 // Método get para obter somente um item
 app.MapGet("/postagens/{id}", async (int id, PostagenDb db) => await db.Postagens.FindAsync(id));
