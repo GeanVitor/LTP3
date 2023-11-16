@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Biblioteca
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Livraria livraria = new Livraria();
+            Livraria.Executar();
+        }
+    }
+}
